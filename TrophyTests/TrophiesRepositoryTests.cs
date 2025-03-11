@@ -30,11 +30,6 @@ namespace Trophy.Tests
         }
 
 
-
-
-
-
-
         [TestMethod()]
         public void AddTest()
         {
@@ -50,7 +45,7 @@ namespace Trophy.Tests
         public void RemoveTest()
         {
             TrophiesRepository repo = new TrophiesRepository();
-            repo.Add(new Trophy { Id = 1, Competition = "World Cup", Year = 2018 });
+            //repo.Add(new Trophy { Id = 1, Competition = "World Cup", Year = 2018 });
             repo.Add(new Trophy { Id = 2, Competition = "Olympics", Year = 2020 });
             repo.Add(new Trophy { Id = 3, Competition = "World Cup", Year = 2014 });
             repo.Add(new Trophy { Id = 4, Competition = "Olympics", Year = 2016 });

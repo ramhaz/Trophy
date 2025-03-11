@@ -53,7 +53,7 @@ namespace Trophy.Tests
             Trophy trophy1 = new Trophy();
             Assert.ThrowsException<ArgumentException>(() => trophy1.Year = 1969);
 
-            // Test if year greater than 2025 throws exception
+            // Test hvis yea er større end året 2025
             Trophy trophy2 = new Trophy();
             Assert.ThrowsException<ArgumentException>(() => trophy2.Year = 2026);
         }
@@ -61,7 +61,7 @@ namespace Trophy.Tests
         [TestMethod()]
         public void ToStringTest()
         {
-            // Test the ToString method with valid values
+            //test toostringmethode 
             Trophy trophy = new Trophy();
             trophy.Id = 1;
             trophy.Competition = "Champions League";
